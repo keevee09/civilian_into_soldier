@@ -1,0 +1,168 @@
+%
+% A simple LaTeX template for Books
+%  (c) Aleksander Morgado <aleksander@es.gnu.org>
+%  Released into public domain
+%
+\documentclass{book}
+\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classic Lined Title Page 
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Peter Wilson (herries.press@earthlink.net)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page compiles as is. If you wish to include this title page in 
+% another document, you will need to copy everything before 
+% \begin{document} into the preamble of your document. The title page is
+% then included using \titleAT within your document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage[svgnames]{xcolor} % Required to specify font color
+\newcommand*{\plogo}{\fbox{$\mathcal{M}$}} % Generic publisher logo
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\titleAT}{\begingroup % Create the command for including the title page in the document
+\font\title="AvenirLTStd-Light" at 48pt
+\font\heading="AvenirLTStd-Light" at 38pt
+\font\body="AvenirLTStd-Light" at 18pt
+\newlength{\drop} % Command for generating a specific amount of whitespace
+\drop=0.1\textheight % Define the command as 10% of the total text height
+\rule{\textwidth}{1pt}\par % Thick horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+\vspace{\drop} % Whitespace between the top lines and title
+\centering % Center all text
+\textcolor{Red}{ % Red font color
+{\heading CIVILIAN}\\[0.5\baselineskip] % Title line 1
+{\Large INTO}\\[0.75\baselineskip] % Title line 2
+{\title SOLDIER}}\\ % Title line 3
+\vspace{0.35\drop} % Whitespace between the title and short horizontal line
+\rule{0.3\textwidth}{0.4pt}\par % Short horizontal line under the title
+\vspace{\drop} % Whitespace between the thin horizontal line and the author name
+{\Large \textsc{JOHN A. LEE}}\par % Author name
+\vfill % Whitespace between the author name and publisher text
+{\large \textcolor{Red}{\plogo}}\\[0.5\baselineskip] % Publisher logo
+{\large \textsc{mayfair books ltd.}}\par % Publisher
+\vspace*{\drop} % Whitespace under the publisher text
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{1pt}\par % Thick horizontal line
+\endgroup}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	MAIN BOOK
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{empty}
+\pagenumbering{roman}
+\titleAT
+\newpage
+\pagestyle{plain}
+
+Third in the New Zealand series of paperbacks, \textsl{Civilian Into Soldier} is a novel which would appear to be largely autobiographical.
+
+Author John Lee's account of trench warfare is an assault upon 
+the emotions---he saw things which few men want to see, and dares to 
+describe them. His words---and what a poet of a writer he is---stun
+and shatter the senses, to think that men fought and died like this.
+
+John Lee was awarded the D.C.M. in World War I. The citation speaks of---``One 
+notable feat of fearless gallantry was on the part of Private J. A. Lee. He 
+tackled, single-handed, a machinegun near Wytchaete road and captured the four 
+gunners. Later, when the Taranaki Company was checked by an enemy post, Lee, 
+with two of his comrades, worked round behind the enemy and rushed the post, 
+capturing forty men and two machine guns . . .''
+
+\newpage
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\tableofcontents
+
+\mainmatter
+\pagestyle{fancy}
+\fancyhf{}
+%\lhead[]{\thepage}
+%\rhead[\thepage]{}
+\fancyhead[RE, LO]{\thepage}
+\pagenumbering{arabic}
+\doublespacing
+%\newpage
+\include{./chapters/chap001}
+\include{./chapters/chap002}
+\include{./chapters/chap003}
+\include{./chapters/chap004}
+\include{./chapters/chap005}
+\include{./chapters/chap006}
+\include{./chapters/chap007}
+\include{./chapters/chap008}
+\include{./chapters/chap009}
+\include{./chapters/chap010}
+\include{./chapters/chap011}
+\include{./chapters/chap012}
+\include{./chapters/chap013}
+\include{./chapters/chap014}
+\include{./chapters/chap015}
+\include{./chapters/chap016}
+\include{./chapters/chap017}
+\include{./chapters/chap018}
+\include{./chapters/chap019}
+\include{./chapters/chap020}
+\include{./chapters/chap021}
+\include{./chapters/chap022}
+\include{./chapters/chap023}
+\include{./chapters/chap024}
+\include{./chapters/chap025}
+\include{./chapters/chap026}
+\include{./chapters/chap027}
+\include{./chapters/chap028}
+\include{./chapters/chap029}
+\include{./chapters/chap030}
+\include{./chapters/chap031}
+\include{./chapters/chap032}
+\include{./chapters/chap033}
+\include{./chapters/chap034}
+\include{./chapters/chap035}
+\include{./chapters/chap036}
+\include{./chapters/chap037}
+\include{./chapters/chap038}
+\include{./chapters/chap039}
+\include{./chapters/chap040}
+\include{./chapters/chap041}
+\include{./chapters/chap042}
+\include{./chapters/chap043}
+\include{./chapters/chap044}
+\include{./chapters/chap045}
+\include{./chapters/chap046}
+\include{./chapters/chap047}
+\include{./chapters/chap048}
+\include{./chapters/chap049}
+\include{./chapters/chap050}
+\include{./chapters/chap051}
+\end{document}
