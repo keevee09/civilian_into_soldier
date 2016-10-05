@@ -9,11 +9,18 @@
 \usepackage{setspace}
 \usepackage{fancyhdr}
 \usepackage{tocloft}
+\usepackage{lettrine}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Classic Lined Title Page 
 % LaTeX Template
 % Version 1.0 (27/12/12)
@@ -77,7 +84,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	MAIN BOOK
+%	MAIN SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -103,6 +110,7 @@ capturing forty men and two machine guns . . .''
 
 \newpage
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\cleardoublepage\phantomsection\pdfbookmark{Contents}{contents}
 \tableofcontents
 
 \mainmatter
@@ -114,6 +122,7 @@ capturing forty men and two machine guns . . .''
 \pagenumbering{arabic}
 \doublespacing
 %\newpage
+
 \include{./chapters/chap001}
 \include{./chapters/chap002}
 \include{./chapters/chap003}
